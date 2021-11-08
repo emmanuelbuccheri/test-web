@@ -1,0 +1,104 @@
+{"level":30,"time":"2021-11-08T15:18:08.681Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Listening on 50876"}
+{"level":30,"time":"2021-11-08T15:18:10.547Z","pid":19576,"hostname":"EMMA-NTBK","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T15:18:10.555Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:10.776Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T15:18:10.776Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:21.446Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:21.447Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:21.447Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:21.456Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:21.457Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:21.457Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:21.788Z","pid":19576,"hostname":"EMMA-NTBK","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T15:18:21.792Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:21.869Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T15:18:21.869Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:25.235Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=.is-danger .message-body containing Opps! Dados de acesso incorretos!"}
+{"level":30,"time":"2021-11-08T15:18:25.565Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:25.565Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:25.565Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:25.574Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:25.574Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:25.574Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:25.892Z","pid":19576,"hostname":"EMMA-NTBK","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T15:18:25.896Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:25.976Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T15:18:25.976Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:29.201Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=.is-danger .message-body containing Opps! Dados de acesso incorretos!"}
+{"level":30,"time":"2021-11-08T15:18:29.548Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:29.548Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:29.548Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:29.556Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:29.556Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:29.556Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:29.808Z","pid":19576,"hostname":"EMMA-NTBK","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T15:18:29.811Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:29.890Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T15:18:29.891Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:33.340Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=.is-danger .message-body containing Opps! Dados de acesso incorretos!"}
+{"level":30,"time":"2021-11-08T15:18:33.724Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:33.724Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:33.724Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:33.733Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:33.733Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:33.733Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:34.037Z","pid":19576,"hostname":"EMMA-NTBK","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T15:18:34.041Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:34.121Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T15:18:34.121Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:37.631Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=.is-danger .message-body containing Opps! Dados de acesso incorretos!"}
+{"level":30,"time":"2021-11-08T15:18:37.980Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:37.980Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:37.980Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:37.988Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:37.988Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:37.988Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:38.313Z","pid":19576,"hostname":"EMMA-NTBK","msg":"currentBrowser: [object Object]"}
+{"level":30,"time":"2021-11-08T15:18:38.316Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:38.395Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Video path: undefined"}
+{"level":30,"time":"2021-11-08T15:18:38.395Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:41.923Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:41.947Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:41.971Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:41.997Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.025Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.051Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.075Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.100Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.124Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.149Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.171Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.217Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Tocadas Recentemente"}
+{"level":30,"time":"2021-11-08T15:18:42.241Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.743Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.768Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.792Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.816Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.842Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.869Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.895Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.920Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.943Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.966Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Buscar"}
+{"level":30,"time":"2021-11-08T15:18:42.998Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.046Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.070Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.094Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.119Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.141Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.168Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.195Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.221Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.244Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.269Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.291Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.315Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.343Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Sertanejo"}
+{"level":30,"time":"2021-11-08T15:18:43.380Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Retrieved text for element css=h2 containing Músicas"}
+{"level":30,"time":"2021-11-08T15:18:43.426Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Getting css of element on page"}
+{"level":30,"time":"2021-11-08T15:18:43.687Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:43.687Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:43.687Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}
+{"level":30,"time":"2021-11-08T15:18:43.695Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active context"}
+{"level":30,"time":"2021-11-08T15:18:43.695Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changing current active page"}
+{"level":30,"time":"2021-11-08T15:18:43.695Z","pid":19576,"hostname":"EMMA-NTBK","msg":"Changed active page"}

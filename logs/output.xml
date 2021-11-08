@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.1 on win32)" generated="20211108 12:18:07.211" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="D:\prgramacion\rfw\Test Web do Site Parodify\tests">
+<suite id="s1-s1" name="Login" source="D:\prgramacion\rfw\Test Web do Site Parodify\tests\login.robot">
+<test id="s1-s1-t1" name="Login com sucesso">
+<kw name="Open Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211108 12:18:08.977" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\ef8dcd09-8051-4f57-89c7-d68fc8090677"}</msg>
+<msg timestamp="20211108 12:18:10.545" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\ef8dcd09-8051-4f57-89c7-d68fc8090677"}</msg>
+<status status="PASS" starttime="20211108 12:18:08.976" endtime="20211108 12:18:10.546"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://parodify.herokuapp.com/users/sign_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211108 12:18:19.895" level="INFO">Successfully initialized new page object and opened url: https://parodify.herokuapp.com/users/sign_in</msg>
+<msg timestamp="20211108 12:18:19.895" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211108 12:18:10.546" endtime="20211108 12:18:19.895"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:08.976" endtime="20211108 12:18:19.895"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>papito@parodify.com</arg>
+<arg>pwd123</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name*=email]</arg>
+<arg>${email_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:19.896" level="INFO">Fills the text 'papito@parodify.com' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:19.896" endtime="20211108 12:18:19.969"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=#user_password</arg>
+<arg>${password_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:19.970" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:19.970" endtime="20211108 12:18:19.984"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=input[value="Log in"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:19.984" endtime="20211108 12:18:20.664"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:19.896" endtime="20211108 12:18:20.664"/>
+</kw>
+<kw name="Logout Link Should Be Visible" library="auth">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${LOGOUT_LINK}</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211108 12:18:20.898" level="INFO">Wait for Element with selector: css=a[href$=sign_out]</msg>
+<status status="PASS" starttime="20211108 12:18:20.665" endtime="20211108 12:18:20.898"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:20.665" endtime="20211108 12:18:20.898"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211108 12:18:21.440" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211108 12:18:20.899" endtime="20211108 12:18:21.441"/>
+</kw>
+<tag>smoke</tag>
+<status status="PASS" starttime="20211108 12:18:08.974" endtime="20211108 12:18:21.441"/>
+</test>
+<test id="s1-s1-t2" name="Senha incorreta">
+<kw name="Open Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211108 12:18:21.470" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\fbe6841d-19e2-48f3-a472-1e41894f233c"}</msg>
+<msg timestamp="20211108 12:18:21.787" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\fbe6841d-19e2-48f3-a472-1e41894f233c"}</msg>
+<status status="PASS" starttime="20211108 12:18:21.469" endtime="20211108 12:18:21.787"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://parodify.herokuapp.com/users/sign_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211108 12:18:24.399" level="INFO">Successfully initialized new page object and opened url: https://parodify.herokuapp.com/users/sign_in</msg>
+<msg timestamp="20211108 12:18:24.399" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211108 12:18:21.788" endtime="20211108 12:18:24.399"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:21.469" endtime="20211108 12:18:24.400"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>papito@parodify.com</arg>
+<arg>123</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name*=email]</arg>
+<arg>${email_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:24.402" level="INFO">Fills the text 'papito@parodify.com' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:24.402" endtime="20211108 12:18:24.463"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=#user_password</arg>
+<arg>${password_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:24.464" level="INFO">Fills the text '123' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:24.463" endtime="20211108 12:18:24.477"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=input[value="Log in"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:24.477" endtime="20211108 12:18:24.973"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:24.401" endtime="20211108 12:18:24.973"/>
+</kw>
+<kw name="Alert Should Be" library="auth">
+<arg>Opps! Dados de acesso incorretos!</arg>
+<kw name="Get Text" library="Browser">
+<arg>css=.is-danger .message-body</arg>
+<arg>==</arg>
+<arg>${expect_arg}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:24.975" endtime="20211108 12:18:25.236"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:24.975" endtime="20211108 12:18:25.236"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211108 12:18:25.560" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-2.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211108 12:18:25.237" endtime="20211108 12:18:25.560"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:21.467" endtime="20211108 12:18:25.561"/>
+</test>
+<test id="s1-s1-t3" name="Email não existe">
+<kw name="Open Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211108 12:18:25.588" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\03429e21-0743-4e22-bf01-31167a0fd746"}</msg>
+<msg timestamp="20211108 12:18:25.891" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\03429e21-0743-4e22-bf01-31167a0fd746"}</msg>
+<status status="PASS" starttime="20211108 12:18:25.588" endtime="20211108 12:18:25.892"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://parodify.herokuapp.com/users/sign_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211108 12:18:28.622" level="INFO">Successfully initialized new page object and opened url: https://parodify.herokuapp.com/users/sign_in</msg>
+<msg timestamp="20211108 12:18:28.622" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211108 12:18:25.892" endtime="20211108 12:18:28.622"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:25.587" endtime="20211108 12:18:28.622"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>404@parodify.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name*=email]</arg>
+<arg>${email_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:28.624" level="INFO">Fills the text '404@parodify.com' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:28.624" endtime="20211108 12:18:28.678"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=#user_password</arg>
+<arg>${password_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:28.679" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:28.678" endtime="20211108 12:18:28.696"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=input[value="Log in"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:28.696" endtime="20211108 12:18:28.946"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:28.623" endtime="20211108 12:18:28.947"/>
+</kw>
+<kw name="Alert Should Be" library="auth">
+<arg>Opps! Dados de acesso incorretos!</arg>
+<kw name="Get Text" library="Browser">
+<arg>css=.is-danger .message-body</arg>
+<arg>==</arg>
+<arg>${expect_arg}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:28.948" endtime="20211108 12:18:29.203"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:28.947" endtime="20211108 12:18:29.203"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211108 12:18:29.544" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-3.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211108 12:18:29.204" endtime="20211108 12:18:29.544"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:25.585" endtime="20211108 12:18:29.544"/>
+</test>
+<test id="s1-s1-t4" name="Email não informado">
+<kw name="Open Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211108 12:18:29.567" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\4ec0a9cb-b67d-4a6f-a64b-976bbb62d882"}</msg>
+<msg timestamp="20211108 12:18:29.807" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\4ec0a9cb-b67d-4a6f-a64b-976bbb62d882"}</msg>
+<status status="PASS" starttime="20211108 12:18:29.567" endtime="20211108 12:18:29.807"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://parodify.herokuapp.com/users/sign_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211108 12:18:32.663" level="INFO">Successfully initialized new page object and opened url: https://parodify.herokuapp.com/users/sign_in</msg>
+<msg timestamp="20211108 12:18:32.664" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211108 12:18:29.808" endtime="20211108 12:18:32.664"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:29.566" endtime="20211108 12:18:32.664"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>${EMPTY}</arg>
+<arg>123</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name*=email]</arg>
+<arg>${email_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:32.666" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:32.666" endtime="20211108 12:18:32.696"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=#user_password</arg>
+<arg>${password_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:32.696" level="INFO">Fills the text '123' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:32.696" endtime="20211108 12:18:32.736"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=input[value="Log in"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:32.736" endtime="20211108 12:18:33.104"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:32.665" endtime="20211108 12:18:33.105"/>
+</kw>
+<kw name="Alert Should Be" library="auth">
+<arg>Opps! Dados de acesso incorretos!</arg>
+<kw name="Get Text" library="Browser">
+<arg>css=.is-danger .message-body</arg>
+<arg>==</arg>
+<arg>${expect_arg}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:33.106" endtime="20211108 12:18:33.341"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:33.105" endtime="20211108 12:18:33.341"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211108 12:18:33.720" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-4.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211108 12:18:33.342" endtime="20211108 12:18:33.720"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:29.564" endtime="20211108 12:18:33.721"/>
+</test>
+<test id="s1-s1-t5" name="Senha não informada">
+<kw name="Open Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211108 12:18:33.746" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\44827799-2e24-426c-94fa-ca5902a1c5a9"}</msg>
+<msg timestamp="20211108 12:18:34.036" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\44827799-2e24-426c-94fa-ca5902a1c5a9"}</msg>
+<status status="PASS" starttime="20211108 12:18:33.745" endtime="20211108 12:18:34.036"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://parodify.herokuapp.com/users/sign_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211108 12:18:37.000" level="INFO">Successfully initialized new page object and opened url: https://parodify.herokuapp.com/users/sign_in</msg>
+<msg timestamp="20211108 12:18:37.000" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211108 12:18:34.036" endtime="20211108 12:18:37.000"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:33.745" endtime="20211108 12:18:37.000"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>papito@parodify.com</arg>
+<arg>${EMPTY}</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name*=email]</arg>
+<arg>${email_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:37.002" level="INFO">Fills the text 'papito@parodify.com' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:37.002" endtime="20211108 12:18:37.056"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=#user_password</arg>
+<arg>${password_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:37.057" level="INFO">Fills the text '' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:37.057" endtime="20211108 12:18:37.073"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=input[value="Log in"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:37.073" endtime="20211108 12:18:37.352"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:37.001" endtime="20211108 12:18:37.353"/>
+</kw>
+<kw name="Alert Should Be" library="auth">
+<arg>Opps! Dados de acesso incorretos!</arg>
+<kw name="Get Text" library="Browser">
+<arg>css=.is-danger .message-body</arg>
+<arg>==</arg>
+<arg>${expect_arg}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:37.354" endtime="20211108 12:18:37.632"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:37.353" endtime="20211108 12:18:37.633"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211108 12:18:37.977" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-5.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211108 12:18:37.633" endtime="20211108 12:18:37.977"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:33.742" endtime="20211108 12:18:37.977"/>
+</test>
+<doc>Testes da página login</doc>
+<status status="PASS" starttime="20211108 12:18:07.251" endtime="20211108 12:18:37.996"/>
+</suite>
+<suite id="s1-s2" name="Player" source="D:\prgramacion\rfw\Test Web do Site Parodify\tests\player.robot">
+<test id="s1-s2-t1" name="Reproduzir paródias Bug de Manha">
+<kw name="Open Login Page" library="auth">
+<kw name="New Browser" library="Browser">
+<arg>chromium</arg>
+<arg>true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<msg timestamp="20211108 12:18:38.017" level="INFO">{"browser": "chromium", "headless": true, "handleSIGINT": true, "handleSIGTERM": true, "handleSIGHUP": true, "timeout": 30000.0, "devtools": false, "slowMo": 0.0, "tracesDir": "D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\70196b88-d44b-4228-ba08-8073ac715326"}</msg>
+<msg timestamp="20211108 12:18:38.312" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"handleSIGINT":true,"handleSIGTERM":true,"handleSIGHUP":true,"timeout":30000,"devtools":false,"slowMo":0,"tracesDir":"D:\\prgramacion\\rfw\\Test Web do Site Parodify\\.logs\\browser\\traces\\70196b88-d44b-4228-ba08-8073ac715326"}</msg>
+<status status="PASS" starttime="20211108 12:18:38.017" endtime="20211108 12:18:38.312"/>
+</kw>
+<kw name="New Page" library="Browser">
+<arg>https://parodify.herokuapp.com/users/sign_in</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page. A Page is the Playwright equivalent to a tab.
+See `Browser, Context and Page` for more information about Page concept.
+Returns a stable identifier for the created page.</doc>
+<msg timestamp="20211108 12:18:41.008" level="INFO">Successfully initialized new page object and opened url: https://parodify.herokuapp.com/users/sign_in</msg>
+<msg timestamp="20211108 12:18:41.008" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<status status="PASS" starttime="20211108 12:18:38.312" endtime="20211108 12:18:41.009"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:38.016" endtime="20211108 12:18:41.009"/>
+</kw>
+<kw name="Login With" library="auth">
+<arg>papito@parodify.com</arg>
+<arg>pwd123</arg>
+<kw name="Fill Text" library="Browser">
+<arg>css=input[name*=email]</arg>
+<arg>${email_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:41.011" level="INFO">Fills the text 'papito@parodify.com' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:41.010" endtime="20211108 12:18:41.066"/>
+</kw>
+<kw name="Fill Text" library="Browser">
+<arg>css=#user_password</arg>
+<arg>${password_arg}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<msg timestamp="20211108 12:18:41.067" level="INFO">Fills the text 'pwd123' in the given field.</msg>
+<status status="PASS" starttime="20211108 12:18:41.067" endtime="20211108 12:18:41.082"/>
+</kw>
+<kw name="Click" library="Browser">
+<arg>css=input[value="Log in"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:41.082" endtime="20211108 12:18:41.624"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:41.010" endtime="20211108 12:18:41.624"/>
+</kw>
+<kw name="Logout Link Should Be Visible" library="auth">
+<kw name="Wait For Elements State" library="Browser">
+<arg>${LOGOUT_LINK}</arg>
+<arg>visible</arg>
+<arg>10</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<msg timestamp="20211108 12:18:41.865" level="INFO">Wait for Element with selector: css=a[href$=sign_out]</msg>
+<status status="PASS" starttime="20211108 12:18:41.625" endtime="20211108 12:18:41.865"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:41.625" endtime="20211108 12:18:41.865"/>
+</kw>
+<kw name="Go To Search Page" library="nav">
+<kw name="Click" library="Browser">
+<arg>css=a[href*=search]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:41.867" endtime="20211108 12:18:41.909"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=h2</arg>
+<arg>equal</arg>
+<arg>Buscar</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:41.909" endtime="20211108 12:18:42.242"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:41.866" endtime="20211108 12:18:42.242"/>
+</kw>
+<kw name="Go To Sertanejo Category" library="nav">
+<kw name="Click" library="Browser">
+<arg>xpath=//img[contains(@src, "sertanejo.png")]/..</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:42.243" endtime="20211108 12:18:42.729"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=h2</arg>
+<arg>equal</arg>
+<arg>Sertanejo</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:42.729" endtime="20211108 12:18:42.999"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:42.243" endtime="20211108 12:18:42.999"/>
+</kw>
+<kw name="Open Album From" library="nav">
+<arg>Marcus e Debug</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//p[contains(text(), "${artist_name}")]/..</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:43.000" endtime="20211108 12:18:43.029"/>
+</kw>
+<kw name="Get Text" library="Browser">
+<arg>css=h2</arg>
+<arg>equal</arg>
+<arg>Músicas</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:43.029" endtime="20211108 12:18:43.381"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:43.000" endtime="20211108 12:18:43.381"/>
+</kw>
+<kw name="Play Song" library="song">
+<arg>Bug de Manh</arg>
+<kw name="Click" library="Browser">
+<arg>xpath=//h2[contains(text(), "${song_name}")]/../..//div[contains(@class, "play")]//a</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" starttime="20211108 12:18:43.382" endtime="20211108 12:18:43.423"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:43.382" endtime="20211108 12:18:43.424"/>
+</kw>
+<kw name="Song Should Be Playing" library="song">
+<arg>Bug de Manh</arg>
+<kw name="Get Style" library="Browser">
+<arg>xpath=//h2[contains(text(), "${song_name}")]/../../..</arg>
+<arg>color</arg>
+<arg>equal</arg>
+<arg>rgb(225, 0, 180)</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Gets the computed style properties of the element selected by ``selector``.</doc>
+<msg timestamp="20211108 12:18:43.434" level="INFO">Value of key: color</msg>
+<msg timestamp="20211108 12:18:43.434" level="INFO">Value of selected property: rgb(225, 0, 180)</msg>
+<status status="PASS" starttime="20211108 12:18:43.425" endtime="20211108 12:18:43.434"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:43.424" endtime="20211108 12:18:43.435"/>
+</kw>
+<kw name="Take Screenshot" library="Browser" type="TEARDOWN">
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<msg timestamp="20211108 12:18:43.682" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211108 12:18:43.435" endtime="20211108 12:18:43.682"/>
+</kw>
+<status status="PASS" starttime="20211108 12:18:38.014" endtime="20211108 12:18:43.683"/>
+</test>
+<doc>Testando o player de paródias</doc>
+<status status="PASS" starttime="20211108 12:18:38.001" endtime="20211108 12:18:43.706"/>
+</suite>
+<status status="PASS" starttime="20211108 12:18:07.213" endtime="20211108 12:18:43.711"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="5" fail="0" skip="0" id="s1-s1" name="Login">Tests.Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s2" name="Player">Tests.Player</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
